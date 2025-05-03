@@ -5,4 +5,67 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".pesquisarReceitas"/>
+    tools:context=".pesquisarReceitas">
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="209dp"
+        android:layout_height="35dp"
+        android:background="#F8D27F"
+        android:ems="10"
+        android:fontFamily="sans-serif-medium"
+        android:inputType="text"
+        android:text="Pesquisar Receita"
+        android:textAlignment="center"
+        android:textColor="@color/material_dynamic_neutral30"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.265" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="32dp"
+        android:layout_height="18dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Olá,"
+        android:textColor="#0E3A5C"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.143" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="206dp"
+        android:layout_height="62dp"
+        android:layout_marginBottom="548dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Que receita iremos fazer hoje?"
+        android:textColor="#0E3A5C"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="109dp"
+        android:layout_height="36dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.052"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023"
+        app:srcCompat="@drawable/logo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
