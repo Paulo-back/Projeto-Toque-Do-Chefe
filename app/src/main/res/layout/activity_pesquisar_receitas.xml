@@ -154,7 +154,6 @@
         android:id="@+id/textView8"
         android:layout_width="163dp"
         android:layout_height="26dp"
-        android:layout_marginTop="523dp"
         android:layout_marginBottom="231dp"
         android:fontFamily="sans-serif-black"
         android:text="Últimas Receitas"
@@ -162,8 +161,7 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/imageView4"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -224,18 +222,13 @@
         android:id="@+id/textView4"
         android:layout_width="149dp"
         android:layout_height="73dp"
-        android:layout_marginStart="238dp"
-        android:layout_marginTop="387dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginBottom="386dp"
+        android:layout_marginStart="8dp"
         android:text="um macarrão extremamente delicioso!!!. Feito na rua de bangcok nas mais higienicas ruas indianas"
         android:textAlignment="viewStart"
         android:textColor="#0E3A5B"
         android:textSize="12sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toEndOf="@+id/imageFavorite"
+        tools:layout_editor_absoluteY="387dp" />
 
     <TextView
         android:id="@+id/textView9"
