@@ -13,6 +13,9 @@
         android:theme="@style/Theme.TOQUE_DO_CHEF"
         tools:targetApi="31" >
         <activity
+            android:name=".Receita"
+            android:exported="false" />
+        <activity
             android:name=".LoginActivity"
             android:exported="false" />
         <activity
