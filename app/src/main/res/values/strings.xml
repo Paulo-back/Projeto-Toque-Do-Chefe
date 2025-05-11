@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">TOQUE_DO_CHEF</string>
+    <string name="favorito_da_semana">Favorito da Semana</string>
+    <string name="que_receita_iremos_fazer_hoje">Que receita iremos fazer hoje?</string>
+    <string name="um_arroz_extremamente_delicioso_e_simples_para_ser_feito">Um arroz extremamente delicioso!! e simples para ser feito.</string>
+    <string name="pesquisar_receita">Pesquisar Receita</string>
 </resources>
