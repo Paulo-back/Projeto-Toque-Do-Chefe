@@ -14,10 +14,13 @@ public class Cadastro {
 
     private String email;
 
+//    private boolean isAdmin; Por enquanto sem
+
+
     public Cadastro() {
     }
 
-    public Cadastro(int id, String nome, String telefone,String senha, String email) {
+    public Cadastro(int id, String nome, String telefone,String senha, String email,boolean isAdmin) {
         this.id = id;
         this.nome = nome;
         this.senha = senha;
@@ -29,6 +32,7 @@ public class Cadastro {
         this.senha = senha;
         this.telefone = telefone;
         this.email = email;
+
     }
 
     @Override
@@ -81,4 +85,12 @@ public class Cadastro {
     public void setEmail(String email) {
         this.email = email;
     }
+
+//    public boolean isAdmin() {
+//        return isAdmin;
+//    }
+//
+//    public void setAdmin(boolean admin) {
+//        isAdmin = admin;
+//    } Por enquanto sem
 }

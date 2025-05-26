@@ -27,4 +27,7 @@ public interface CadastroDao {
 
     @Query("SELECT * FROM Cadastro WHERE nome = :nome LIMIT 1")
     Cadastro buscarPeloNome(String nome);
+
+    @Query("SELECT * FROM Cadastro WHERE email = :email AND senha = :senha LIMIT 1")
+    Cadastro login(String email, String senha);
 }

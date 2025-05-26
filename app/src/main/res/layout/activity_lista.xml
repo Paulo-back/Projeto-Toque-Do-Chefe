@@ -9,11 +9,11 @@
         android:id="@+id/tituloLista"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:gravity="center"
         android:text="Lista de Cadastros"
         android:textSize="20sp"
-        android:textStyle="bold"
-        android:gravity="center"
-        android:layout_marginBottom="12dp"/>
+        android:textStyle="bold" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
@@ -25,8 +25,8 @@
         android:id="@+id/btnVoltarCadastro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Novo Cadastro"
+        android:layout_gravity="center"
         android:layout_marginTop="16dp"
-        android:layout_gravity="center"/>
+        android:text="Novo Cadastro" />
 
 </LinearLayout>

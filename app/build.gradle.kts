@@ -40,6 +40,8 @@ dependencies {
     implementation(libs.room.common.jvm)
     implementation(libs.room.runtime.android)
     annotationProcessor(libs.room.compiler)
+    implementation("com.google.android.material:material:1.11.0")
+
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)

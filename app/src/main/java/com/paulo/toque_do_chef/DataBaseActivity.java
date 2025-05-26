@@ -26,6 +26,17 @@ public class DataBaseActivity extends AppCompatActivity {
         editTextTelefone = findViewById(R.id.editTextTelefone);
         editTextSenha = findViewById(R.id.editTextSenha);
         editTextEmail = findViewById(R.id.editTextEmail);
+
+        findViewById(R.id.btnIrParaLogin).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(DataBaseActivity.this, LoginActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
+
     }
 
     public void cadastrar(View view) {
@@ -37,10 +48,16 @@ public class DataBaseActivity extends AppCompatActivity {
         String senha = editTextSenha.getText().toString();
         String email = editTextEmail.getText().toString();
 
+        if (nome.isEmpty() || telefone.isEmpty() || senha.isEmpty() || email.isEmpty()) {
+            Toast.makeText(this, "Preencha todos os campos!", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
         dao.inserir(new Cadastro(nome,telefone, senha, email));
+        Toast.makeText(this, "Cadastro realizado com sucesso!", Toast.LENGTH_SHORT).show();
 
         Intent intent = new Intent(this, ListaActivity.class);
-        startActivity(intent); ///asdw
+        startActivity(intent);
 
 //        try {
 //            dao.inserir(new Cadastro(nome, telefone, senha, email));
@@ -103,5 +120,6 @@ public class DataBaseActivity extends AppCompatActivity {
         Intent intent = new Intent(this, ListaActivity.class);
         startActivity(intent);
     }
+
 
 }
