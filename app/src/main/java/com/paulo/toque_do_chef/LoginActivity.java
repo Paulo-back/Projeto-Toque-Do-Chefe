@@ -55,7 +55,7 @@ public class LoginActivity extends AppCompatActivity {
 
                 if (usuario != null) {
                     Toast.makeText(LoginActivity.this, "Login bem-sucedido!", Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(LoginActivity.this, DataBaseActivity.class);
+                    Intent intent = new Intent(LoginActivity.this, pesquisarReceitas.class);
                     startActivity(intent);
                     finish();
                 } else {
