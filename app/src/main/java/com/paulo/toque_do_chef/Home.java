@@ -10,35 +10,43 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class Receita extends AppCompatActivity {
+public class Home extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_receita);
+        setContentView(R.layout.activity_home);
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
 
-
-        ImageButton goToPerfil3 = findViewById(R.id.perfilMenu3);
-        goToPerfil3.setOnClickListener(v -> {
-            Intent intent = new Intent(Receita.this, LoginActivity.class);
+        // Ação do botão goToRecipeButton
+        ImageButton goToRecipeButton = findViewById(R.id.goToRecipeButton);
+        goToRecipeButton.setOnClickListener(v -> {
+            Intent intent = new Intent(Home.this, Receita.class);
             startActivity(intent);
         });
 
-        ImageButton goTohomeMenu2 = findViewById(R.id.homeMenu3);
+        ImageButton goTohomeMenu2 = findViewById(R.id.homeMenu2);
         goTohomeMenu2.setOnClickListener(v -> {
-            Intent intent = new Intent(Receita.this, Home.class);
+            Intent intent = new Intent(Home.this, Home.class);
             startActivity(intent);
         });
 
-        ImageButton goTocategoriaMenu2 = findViewById(R.id.categoriaMenu3);
+        ImageButton goTocategoriaMenu2 = findViewById(R.id.categoriaMenu2);
         goTocategoriaMenu2.setOnClickListener(v -> {
-            Intent intent = new Intent(Receita.this, CategoriasActivity.class);
+            Intent intent = new Intent(Home.this, CategoriasActivity.class);
+            startActivity(intent);
+        }); //consertar
+
+
+        ImageButton goToperfilMenu2 = findViewById(R.id.perfilMenu2);
+        goToperfilMenu2.setOnClickListener(v -> {
+            Intent intent = new Intent(Home.this, LoginActivity.class);
             startActivity(intent);
         });
 

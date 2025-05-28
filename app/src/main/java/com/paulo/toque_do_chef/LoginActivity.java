@@ -55,7 +55,7 @@ public class LoginActivity extends AppCompatActivity {
 
                 if (usuario != null) {
                     Toast.makeText(LoginActivity.this, "Login bem-sucedido!", Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(LoginActivity.this, pesquisarReceitas.class);
+                    Intent intent = new Intent(LoginActivity.this, Home.class);
                     startActivity(intent);
                     finish();
                 } else {
@@ -63,5 +63,15 @@ public class LoginActivity extends AppCompatActivity {
                 }
             }
         });
+
+        ImageButton goToCadastrar = findViewById(R.id.imageButton5);
+        goToCadastrar.setOnClickListener(v -> {
+            Intent intent = new Intent(LoginActivity.this, DataBaseActivity.class);
+            startActivity(intent);
+        });
+
+
+
+//
     }
 }

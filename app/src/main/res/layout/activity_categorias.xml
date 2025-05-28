@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="#E7E7E7"
     android:backgroundTint="#FDFCFC"
-    tools:context=".MainActivity">
+    tools:context=".CategoriasActivity">
 
     <ImageView
         android:id="@+id/imageView8"
@@ -54,7 +54,7 @@
         android:layout_marginTop="122dp"
         android:layout_marginBottom="692dp"
         android:fontFamily="@font/alfa_slab_one"
-        android:text="Seus Favoritos"
+        android:text="Categorias"
         android:textColor="#0E3A5D"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -74,9 +74,10 @@
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/group_427319157" />
 
     <ImageButton
@@ -131,7 +132,6 @@
         android:scaleY="2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.692"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
@@ -158,14 +158,14 @@
         android:layout_height="66dp"
         android:layout_marginTop="779dp"
         android:layout_marginBottom="1dp"
-        android:background="#F0F0F0"
+        android:background="#00FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.371"
+        app:layout_constraintHorizontal_bias="0.466"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.5"
-        app:srcCompat="@drawable/group_427319121__1_" />
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/categoria_amarelo" />
 
     <ImageButton
         android:id="@+id/homeMenu"
@@ -176,10 +176,10 @@
         android:background="#00FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.095"
+        app:layout_constraintHorizontal_bias="0.124"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.5"
+        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/group_427319122__1_" />
 
     <ImageButton
@@ -191,25 +191,25 @@
         android:background="#00FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.907"
+        app:layout_constraintHorizontal_bias="0.869"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.5"
+        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/group_427319120" />
 
-    <ImageButton
-        android:id="@+id/favoritosMenu"
-        android:layout_width="66dp"
-        android:layout_height="66dp"
-        android:layout_marginTop="779dp"
-        android:layout_marginBottom="1dp"
-        android:background="#00FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.628"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.5"
-        app:srcCompat="@drawable/group_427319123" />
+    <!--    <ImageButton-->
+<!--        android:id="@+id/favoritosMenu"-->
+<!--        android:layout_width="66dp"-->
+<!--        android:layout_height="66dp"-->
+<!--        android:layout_marginTop="779dp"-->
+<!--        android:layout_marginBottom="1dp"-->
+<!--        android:background="#00FFFFFF"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.628"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.5"-->
+<!--        app:srcCompat="@drawable/favoritosamarelo" />-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

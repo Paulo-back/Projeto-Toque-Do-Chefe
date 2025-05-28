@@ -10,38 +10,37 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class Receita extends AppCompatActivity {
+public class CategoriasActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_receita);
+        setContentView(R.layout.activity_categorias);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
 
-
-        ImageButton goToPerfil3 = findViewById(R.id.perfilMenu3);
-        goToPerfil3.setOnClickListener(v -> {
-            Intent intent = new Intent(Receita.this, LoginActivity.class);
+        ImageButton goTohomeMenu = findViewById(R.id.homeMenu);
+        goTohomeMenu.setOnClickListener(v -> {
+            Intent intent = new Intent(CategoriasActivity.this, Home.class);
             startActivity(intent);
         });
 
-        ImageButton goTohomeMenu2 = findViewById(R.id.homeMenu3);
-        goTohomeMenu2.setOnClickListener(v -> {
-            Intent intent = new Intent(Receita.this, Home.class);
+        ImageButton goTocategoriaMenu = findViewById(R.id.categoriaMenu);
+        goTocategoriaMenu.setOnClickListener(v -> {
+            Intent intent = new Intent(CategoriasActivity.this, CategoriasActivity.class);
+            startActivity(intent);
+        }); //consertar
+
+
+        ImageButton goToperfilMenu = findViewById(R.id.perfilMenu);
+        goToperfilMenu.setOnClickListener(v -> {
+            Intent intent = new Intent(CategoriasActivity.this, LoginActivity.class);
             startActivity(intent);
         });
-
-        ImageButton goTocategoriaMenu2 = findViewById(R.id.categoriaMenu3);
-        goTocategoriaMenu2.setOnClickListener(v -> {
-            Intent intent = new Intent(Receita.this, CategoriasActivity.class);
-            startActivity(intent);
-        });
-
 
     }
 }

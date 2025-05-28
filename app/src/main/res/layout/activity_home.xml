@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".pesquisarReceitas">
+    tools:context=".Home">
 
     <ImageView
         android:id="@+id/imageView2"
@@ -13,10 +13,10 @@
         android:layout_height="851dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.257"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/fundo" />
 
     <ImageView
@@ -28,64 +28,67 @@
         android:scaleY="2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4"
         app:srcCompat="@drawable/rectangle_9" />
 
-    <ImageButton
-        android:id="@+id/categoriaMenu2"
-        android:layout_width="66dp"
-        android:layout_height="66dp"
-        android:background="#00F0F0F0"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.405"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.996"
-        app:srcCompat="@drawable/group_427319121__1_" />
+    <!--    <ImageButton-->
+    <!--        android:id="@+id/favoritosMenu2"-->
+    <!--        android:layout_width="66dp"-->
+    <!--        android:layout_height="66dp"-->
+    <!--        android:background="#00FFFFFF"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.689"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_constraintVertical_bias="0.996"-->
+    <!--        app:srcCompat="@drawable/group_427319123" />-->
+
+
 
     <ImageButton
         android:id="@+id/homeMenu2"
         android:layout_width="0dp"
         android:layout_height="66dp"
-        android:layout_marginStart="35dp"
+        android:layout_marginStart="15dp"
         android:layout_marginEnd="228dp"
-        android:background="#F0F0F0"
+        android:background="#00F0F0F0"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/perfilMenu2"
         app:layout_constraintHorizontal_bias="0.101"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.996"
-        app:srcCompat="@drawable/group_427319122__1_" />
+        app:layout_constraintVertical_bias="0.997"
+        app:srcCompat="@drawable/home_amarelo" />
 
     <ImageButton
-        android:id="@+id/favoritosMenu2"
+        android:id="@+id/categoriaMenu2"
         android:layout_width="66dp"
         android:layout_height="66dp"
-        android:background="#00FFFFFF"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="3dp"
+        android:background="#00F0F0F0"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.689"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.996"
-        app:srcCompat="@drawable/group_427319123" />
+        app:layout_constraintVertical_bias="0.997"
+        app:srcCompat="@drawable/group_427319121__1_" />
 
     <ImageButton
         android:id="@+id/perfilMenu2"
         android:layout_width="0dp"
         android:layout_height="66dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginEnd="14dp"
         android:background="#00FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/homeMenu2"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.997"
+        app:layout_constraintVertical_bias="0.996"
         app:srcCompat="@drawable/group_427319120" />
 
     <TextView
