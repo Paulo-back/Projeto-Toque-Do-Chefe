@@ -1,6 +1,7 @@
 package com.paulo.toque_do_chef;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -26,7 +27,7 @@ public class LoginActivity extends AppCompatActivity {
         editSenha = findViewById(R.id.editTextTextEmailAddress2);
         btnLogin = findViewById(R.id.imageButton4);
 
-        // Ajuste de margem (mantido da estrutura EdgeToEdge)
+        // Ajuste de margem
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             v.setPadding(
                     insets.getInsets(WindowInsetsCompat.Type.systemBars()).left,
@@ -37,30 +38,32 @@ public class LoginActivity extends AppCompatActivity {
             return insets;
         });
 
-        // Clique do botão de login
-        btnLogin.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String email = editEmail.getText().toString().trim();
-                String senha = editSenha.getText().toString().trim();
+        btnLogin.setOnClickListener(v -> {
+            String email = editEmail.getText().toString().trim();
+            String senha = editSenha.getText().toString().trim();
 
-                if (email.isEmpty() || senha.isEmpty()) {
-                    Toast.makeText(LoginActivity.this, "Preencha todos os campos", Toast.LENGTH_SHORT).show();
-                    return;
-                }
+            if (email.isEmpty() || senha.isEmpty()) {
+                Toast.makeText(LoginActivity.this, "Preencha todos os campos", Toast.LENGTH_SHORT).show();
+                return;
+            }
 
-                AppDatabase db = AppDatabase.getInstance(LoginActivity.this);
-                CadastroDao dao = db.registroDao();
-                Cadastro usuario = dao.login(email, senha);
+            AppDatabase db = AppDatabase.getInstance(LoginActivity.this);
+            CadastroDao dao = db.registroDao();
+            Cadastro usuario = dao.login(email, senha);
 
-                if (usuario != null) {
-                    Toast.makeText(LoginActivity.this, "Login bem-sucedido!", Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(LoginActivity.this, Home.class);
-                    startActivity(intent);
-                    finish();
-                } else {
-                    Toast.makeText(LoginActivity.this, "E-mail ou senha incorretos!", Toast.LENGTH_SHORT).show();
-                }
+            if (usuario != null) {
+                // Salvar o ID no SharedPreferences
+                SharedPreferences prefs = getSharedPreferences("user_prefs", MODE_PRIVATE);
+                SharedPreferences.Editor editor = prefs.edit();
+                editor.putInt("cadastroId", usuario.getId());
+                editor.apply();
+
+                Toast.makeText(LoginActivity.this, "Login bem-sucedido!", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(LoginActivity.this, Home.class);
+                startActivity(intent);
+                finish();
+            } else {
+                Toast.makeText(LoginActivity.this, "E-mail ou senha incorretos!", Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -69,9 +72,5 @@ public class LoginActivity extends AppCompatActivity {
             Intent intent = new Intent(LoginActivity.this, DataBaseActivity.class);
             startActivity(intent);
         });
-
-
-
-//
     }
 }

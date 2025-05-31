@@ -36,7 +36,7 @@
         app:layout_constraintVertical_bias="0.042" />
 
     <ImageButton
-        android:id="@+id/imageButton3"
+        android:id="@+id/btnLogOut"
         android:layout_width="49dp"
         android:layout_height="47dp"
         android:background="#00FFFFFF"

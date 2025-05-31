@@ -38,7 +38,7 @@ public class CategoriasActivity extends AppCompatActivity {
 
         ImageButton goToperfilMenu = findViewById(R.id.perfilMenu);
         goToperfilMenu.setOnClickListener(v -> {
-            Intent intent = new Intent(CategoriasActivity.this, LoginActivity.class);
+            Intent intent = new Intent(CategoriasActivity.this, Editar.class);
             startActivity(intent);
         });
 

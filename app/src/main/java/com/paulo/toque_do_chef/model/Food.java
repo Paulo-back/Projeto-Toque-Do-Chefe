@@ -1,6 +1,8 @@
 package com.paulo.toque_do_chef.model;
 
-public class Food {
+import java.io.Serializable;
+
+public class Food implements Serializable {
     int imgFood;
     String foodName;
     String foodDescription;

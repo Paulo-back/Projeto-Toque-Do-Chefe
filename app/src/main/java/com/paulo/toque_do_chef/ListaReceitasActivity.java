@@ -48,36 +48,43 @@ public class ListaReceitasActivity extends AppCompatActivity {
     private void getFood(){
         Food food1 = new Food(
                 R.drawable.arroz,
-                "Receita 1",
+                "Arroz Branco",
                 "Confira como fazer arroz branco soltinho de forma simples e tradicional. Essa receita incrível é perfeita para acompanha um feijãozinho bem temperado! Um arroz soltinho para ninguém botar defeito!"
         );
         foodList.add(food1);
 
         Food food2 = new Food(
-                R.drawable.arroz,
-                "Receita 2",
-                "Confira como fazer arroz branco soltinho de forma simples e tradicional. Essa receita incrível é perfeita para acompanha um feijãozinho bem temperado! Um arroz soltinho para ninguém botar defeito!"
+                R.drawable.bolo,
+                "Torta de Banana com Creme",
+                "Prepare-se para saborear uma Torta de Banana com Creme que é pura indulgência! Essa receita rápida e deliciosa é perfeita para qualquer hora do dia." +
+                        " Com uma massa macia e um recheio cremoso de banana, é a opção ideal para um lanche da tarde ou uma sobremesa especial. Simplesmente irresistível!"
         );
         foodList.add(food2);
 
         Food food3 = new Food(
-                R.drawable.arroz,
-                "Receita 3",
-                "Confira como fazer arroz branco soltinho de forma simples e tradicional. Essa receita incrível é perfeita para acompanha um feijãozinho bem temperado! Um arroz soltinho para ninguém botar defeito!"
+                R.drawable.frangoassado,
+                "Frango Assado na Mostarda e Mel",
+                "Transforme seu almoço ou jantar com este Frango Assado na Mostarda e Mel!" +
+                        " Uma receita de carnes e aves que une o agridoce da mostarda e do mel em um frango suculento e cheio de sabor." +
+                        " Crocante por fora e macio por dentro, é a pedida certa para impressionar sem complicação."
         );
         foodList.add(food3);
 
         Food food4 = new Food(
-                R.drawable.arroz,
-                "Receita 4",
-                "Confira como fazer arroz branco soltinho de forma simples e tradicional. Essa receita incrível é perfeita para acompanha um feijãozinho bem temperado! Um arroz soltinho para ninguém botar defeito!"
+                R.drawable.sopadeoutono,
+                "Sopa de Legumes Fácil",
+                "Aqueça a alma com esta Sopa de Legumes Fácil! Perfeita para os dias mais frios ou para uma refeição leve e nutritiva." +
+                        " Repleta de vegetais frescos e um caldo saboroso," +
+                        " essa sopa é descomplicada de fazer e um abraço em forma de comida. Uma opção prática e reconfortante para toda a família."
         );
         foodList.add(food4);
 
         Food food5 = new Food(
-                R.drawable.arroz,
-                "Receita 5",
-                "Confira como fazer arroz branco soltinho de forma simples e tradicional. Essa receita incrível é perfeita para acompanha um feijãozinho bem temperado! Um arroz soltinho para ninguém botar defeito!"
+                R.drawable.smoothiesdecenoura,
+                "Suco Natural de Laranja com Cenoura e Gengibre",
+                "Refresque-se e energize-se com este Suco Natural de Laranja com Cenoura e Gengibre! Uma combinação vibrante e nutritiva," +
+                        " essa bebida é perfeita para começar o dia ou para um boost de vitalidade a qualquer momento." +
+                        " Além de delicioso, é cheio de vitaminas e um toque picante que vai te surpreender."
         );
         foodList.add(food5);
     }

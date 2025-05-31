@@ -36,14 +36,14 @@
 
     <ImageButton
         android:id="@+id/homeMenu2"
-        android:layout_width="88dp"
+        android:layout_width="0dp"
         android:layout_height="72dp"
-        android:layout_marginStart="15dp"
-        android:layout_marginEnd="72dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="229dp"
         android:layout_marginBottom="4dp"
         android:background="#00F0F0F0"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/categoriaMenu2"
+        app:layout_constraintEnd_toStartOf="@+id/perfilMenu2"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/home_amarelo" />
 
@@ -61,15 +61,17 @@
 
     <ImageButton
         android:id="@+id/perfilMenu2"
-        android:layout_width="88dp"
+        android:layout_width="0dp"
         android:layout_height="72dp"
+        android:layout_marginEnd="1dp"
         android:layout_marginBottom="1dp"
         android:background="#00FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/homeMenu2"
         app:layout_constraintTop_toBottomOf="@+id/imageView4"
         app:layout_constraintVertical_bias="0.955"
-        app:srcCompat="@drawable/group_427319120"
-        tools:layout_editor_absoluteX="322dp" />
+        app:srcCompat="@drawable/group_427319120" />
 
     <TextView
         android:id="@+id/userName5"
@@ -80,7 +82,7 @@
         android:fontFamily="@font/alfa_slab_one"
         android:text="Usuario"
         android:textColor="#0E3A5C"
-        app:layout_constraintBottom_toBottomOf="@+id/imageButton3"
+        app:layout_constraintBottom_toBottomOf="@+id/btnLogOut"
         app:layout_constraintStart_toEndOf="@+id/imageView3" />
 
     <EditText
@@ -141,7 +143,7 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/textView4"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton3" />
+        app:layout_constraintTop_toBottomOf="@+id/btnLogOut" />
 
     <TextView
         android:id="@+id/textView9"
@@ -170,7 +172,7 @@
         app:srcCompat="@drawable/logo" />
 
     <ImageButton
-        android:id="@+id/imageButton3"
+        android:id="@+id/btnLogOut"
         android:layout_width="55dp"
         android:layout_height="45dp"
         android:layout_marginTop="16dp"

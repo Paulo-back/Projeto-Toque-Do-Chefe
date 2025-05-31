@@ -13,10 +13,10 @@
         android:layout_height="851dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.114"
+        app:layout_constraintHorizontal_bias="0.085"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.95"
+        app:layout_constraintVertical_bias="0.933"
         app:srcCompat="@drawable/fundo" />
 
     <ImageView
@@ -106,14 +106,60 @@
         app:layout_constraintStart_toStartOf="@+id/editTextTextEmailAddress4"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress4" />
 
-    <Button
-        android:id="@+id/button"
+    <TextView
+        android:id="@+id/userName5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="34dp"
-        android:text="Enviar"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="-120dp"
+        android:layout_marginBottom="11dp"
+        android:fontFamily="@font/alfa_slab_one"
+        android:text="Logout"
+        android:textColor="#0E3A5C"
+        app:layout_constraintBottom_toBottomOf="@+id/btnLogOut"
+        app:layout_constraintStart_toEndOf="@+id/btnLogOut" />
+
+    <!-- Botão de Logout no topo direito -->
+    <ImageButton
+        android:id="@+id/btnLogOut"
+        android:layout_width="55dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="203dp"
+        android:background="#00FFFFFF"
+        android:scaleType="fitCenter"
+        android:contentDescription="Logout"
+        android:src="@drawable/group__1_"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Botão Editar -->
+    <ImageButton
+        android:id="@+id/buttonEditar"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Editar"
+        android:src="@drawable/btneditar"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPhone3"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextPhone3" />
+        app:layout_constraintEnd_toStartOf="@+id/buttonExcluir"
+        app:layout_constraintHorizontal_chainStyle="spread" />
+
+    <!-- Botão Excluir -->
+    <ImageButton
+        android:id="@+id/buttonExcluir"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Excluir"
+        android:src="@drawable/btnexcluir"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPhone3"
+        app:layout_constraintStart_toEndOf="@+id/buttonEditar"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

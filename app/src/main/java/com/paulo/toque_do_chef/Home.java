@@ -1,6 +1,7 @@
 package com.paulo.toque_do_chef;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.widget.ImageButton;
 
@@ -24,6 +25,10 @@ public class Home extends AppCompatActivity {
             return insets;
         });
 
+        SharedPreferences prefs = getSharedPreferences("user_prefs", MODE_PRIVATE);
+        int cadastroId = prefs.getInt("cadastroId", -1);
+
+
         // Ação do botão goToRecipeButton
         ImageButton goToRecipeButton = findViewById(R.id.goToRecipeButton);
         goToRecipeButton.setOnClickListener(v -> {
@@ -37,11 +42,11 @@ public class Home extends AppCompatActivity {
             startActivity(intent);
         });
 
-        /*ImageButton goTocategoriaMenu2 = findViewById(R.id.categoriaMenu2);
-        goTocategoriaMenu2.setOnClickListener(v -> {
-            Intent intent = new Intent(Home.this, CategoriasActivity.class);
+        ImageButton goToRecipeButton2 = findViewById(R.id.goToRecipeButton2);
+        goToRecipeButton2.setOnClickListener(v -> {
+            Intent intent = new Intent(Home.this, Receita.class);
             startActivity(intent);
-        }); //consertar*/
+        });
 
         //Botão de Categorias está indo para Lista de Receitas
         ImageButton goToListaReceitas = findViewById(R.id.categoriaMenu2);
@@ -52,9 +57,12 @@ public class Home extends AppCompatActivity {
 
         ImageButton goToperfilMenu2 = findViewById(R.id.perfilMenu2);
         goToperfilMenu2.setOnClickListener(v -> {
-            Intent intent = new Intent(Home.this, LoginActivity.class);
+            Intent intent = new Intent(Home.this, Editar.class);
+            intent.putExtra("cadastroId",cadastroId); // Envia o ID do cadastro
             startActivity(intent);
         });
+
+
 
 
     }
