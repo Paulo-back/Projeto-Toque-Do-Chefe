@@ -76,7 +76,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.997"
-        app:srcCompat="@drawable/home_amarelo" />
+        app:srcCompat="@drawable/homegray" />
 
     <ImageButton
         android:id="@+id/categoriaMenu2"
@@ -91,7 +91,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.997"
-        app:srcCompat="@drawable/group_427319121__1_" />
+        app:srcCompat="@drawable/categoria_amarelo" />
 
     <ImageButton
         android:id="@+id/perfilMenu2"

@@ -39,14 +39,20 @@ public class FoodAdapter extends RecyclerView.Adapter<FoodAdapter.FoodViewHolder
         holder.binding.txtFoodName.setText(food.getFoodName());
         holder.binding.txtFoodDescription.setText(food.getFoodDescription());
 
-        // Configura clique no item
-        holder.itemView.setOnClickListener(v -> {
+
+
+        holder.binding.btnAbrirReceita.setOnClickListener(v -> {
             Intent intent = new Intent(context, Receita.class);
             intent.putExtra("imageResId", food.getImgFood());
             intent.putExtra("title", food.getFoodName());
             intent.putExtra("description", food.getFoodDescription());
+            intent.putExtra("FoodPrepare", food.getFoodPrepare());
+            intent.putExtra("foodIngredients", food.getFoodRecipe());
+            intent.putExtra("Rating",food.getRating());
             context.startActivity(intent);
         });
+
+
     }
 
     @Override

@@ -9,7 +9,7 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class Editar extends AppCompatActivity {
+public class Perfil extends AppCompatActivity {
 
     private CadastroDao cadastroDao;
     private EditText editNome, editSenha, editEmail, editTelefone;
@@ -20,7 +20,7 @@ public class Editar extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_editar);
+        setContentView(R.layout.activity_perfil);
 
         cadastroDao = AppDatabase.getInstance(this).registroDao();
 
@@ -58,7 +58,7 @@ public class Editar extends AppCompatActivity {
                     editEmail.setText(cadastro.getEmail());
                     editTelefone.setText(cadastro.getTelefone());
                 } else {
-                    Toast.makeText(Editar.this, "Usuário não encontrado!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Perfil.this, "Usuário não encontrado!", Toast.LENGTH_SHORT).show();
                     deslogar();
                 }
             });
@@ -80,7 +80,7 @@ public class Editar extends AppCompatActivity {
 
         new Thread(() -> {
             cadastroDao.atualizar(cadastroAtualizado);
-            runOnUiThread(() -> Toast.makeText(Editar.this, "Cadastro atualizado!", Toast.LENGTH_SHORT).show());
+            runOnUiThread(() -> Toast.makeText(Perfil.this, "Cadastro atualizado!", Toast.LENGTH_SHORT).show());
         }).start();
     }
 
@@ -90,11 +90,11 @@ public class Editar extends AppCompatActivity {
             if (cadastro != null) {
                 cadastroDao.excluir(cadastro);
                 runOnUiThread(() -> {
-                    Toast.makeText(Editar.this, "Cadastro excluído!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Perfil.this, "Cadastro excluído!", Toast.LENGTH_SHORT).show();
                     deslogar(); // Desloga e redireciona após exclusão
                 });
             } else {
-                runOnUiThread(() -> Toast.makeText(Editar.this, "Usuário não encontrado para exclusão!", Toast.LENGTH_SHORT).show());
+                runOnUiThread(() -> Toast.makeText(Perfil.this, "Usuário não encontrado para exclusão!", Toast.LENGTH_SHORT).show());
             }
         }).start();
     }
@@ -104,9 +104,9 @@ public class Editar extends AppCompatActivity {
         SharedPreferences prefs = getSharedPreferences("user_prefs", MODE_PRIVATE);
         prefs.edit().clear().apply();
 
-        Intent intent = new Intent(Editar.this, LoginActivity.class);
+        Intent intent = new Intent(Perfil.this, LoginActivity.class);
         startActivity(intent);
-        Toast.makeText(Editar.this, "Deslogado!", Toast.LENGTH_SHORT).show();
+        Toast.makeText(Perfil.this, "Deslogado!", Toast.LENGTH_SHORT).show();
         finish();
 
 

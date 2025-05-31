@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Editar">
+    tools:context=".Perfil">
 
     <ImageView
         android:id="@+id/imageView10"
@@ -128,7 +128,7 @@
         android:background="#00FFFFFF"
         android:scaleType="fitCenter"
         android:contentDescription="Logout"
-        android:src="@drawable/group__1_"
+        android:src="@drawable/perfilyellow"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 

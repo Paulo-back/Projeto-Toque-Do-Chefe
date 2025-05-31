@@ -91,17 +91,28 @@
         android:layout_height="29dp"
         android:layout_marginBottom="29dp"
         android:background="#F8D27F"
-        android:ems="10"
-        android:fontFamily="sans-serif-medium"
+        android:hint="Pesquisar receita"
         android:inputType="text"
-        android:text="Pesquisar receita"
-        android:textAlignment="center"
-        android:textColor="@color/material_dynamic_neutral30"
+        android:gravity="center"
+        android:textColorHint="@color/material_dynamic_neutral30"
         app:layout_constraintBottom_toTopOf="@+id/imageFavorite"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2"/>
+
+    <ImageButton
+        android:id="@+id/btnBuscar"
+        android:layout_width="29dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="8dp"
+        android:background="@color/yellow"
+        android:contentDescription="Buscar receita"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextText"
+        app:layout_constraintStart_toEndOf="@+id/editTextText"
+        app:layout_constraintTop_toTopOf="@+id/editTextText"
+        app:srcCompat="@drawable/lupablack" />
+
+
 
     <TextView
         android:id="@+id/textView"
