@@ -220,7 +220,69 @@ public class ListaReceitasActivity extends AppCompatActivity {
                         "Misture o shoyu, açúcar e o macarrão cozido.\n" +
                         "Sirva quente!", 2.5f));
 
-        // adicione todos os outros aqui...
+        foodList.add(new Food(R.drawable.bolo,"Torta de Banana com Creme",
+                "Prepare-se para saborear uma Torta de Banana com Creme que é pura indulgência!" +
+                        " Essa receita rápida e deliciosa é perfeita para qualquer hora do dia.+\n" +
+                "\n" +" Com uma massa macia e um recheio cremoso de banana," +
+                        " é a opção ideal para um lanche da tarde ou uma sobremesa especial." +
+                        " Simplesmente irresistível!",
+                "Massa: Farinha de trigo, açúcar, manteiga (ou margarina), ovos.\n" +
+                "Recheio: Bananas maduras, creme de leite (ou leite condensado/creme confeiteiro), açúcar," +
+                        " canela (opcional).",
+                "Prepare a massa: Misture os ingredientes da massa até formar uma bola. Forre uma forma.\n" +
+                        "Corte as bananas: Fatie as bananas e distribua sobre a massa.\n" +
+                        "Faça o creme: Misture os ingredientes do recheio cremoso e cubra as bananas.\n" +
+                        "Asse: Leve ao forno até dourar e o creme firmar.\n" +
+                        "Sirva: Deixe esfriar um pouco antes de servir.",4.3f));
+
+        foodList.add(new Food(R.drawable.smoothiesdecenoura,"Suco de Laranja, Cenoura e Gengibre",
+                "Refresque-se e energize-se com este Suco Natural de Laranja com Cenoura e Gengibre!" +
+                        " Uma combinação vibrante e nutritiva," +" essa bebida é perfeita para começar o dia" +
+                        " ou para um boost de vitalidade a qualquer momento." +
+                        " Além de delicioso, é cheio de vitaminas e um toque picante que vai te surpreender.",
+                "Ingredientes:"+"\n"+"Laranjas: Laranjas frescas (quantidade a gosto, para o suco).\n" +
+                        "Cenoura: Cenoura(s) picada(s) ou ralada(s).\n" +
+                        "Gengibre: Um pedaço pequeno de gengibre fresco (a gosto, sem casca).\n" +
+                        "Opcional: Água, gelo.",
+                "Esprema o suco das laranjas.\n" +
+                        "No liquidificador, coloque o suco de laranja, a cenoura picada e o gengibre.\n" +
+                        "Bata bem até a mistura ficar homogênea e sem pedaços.\n" +
+                        "Se quiser, coe para um suco mais fino (opcional).\n" +
+                        "Sirva com gelo e desfrute!",
+                4.6f));
+
+        foodList.add(new Food(R.drawable.frangoassado,"Frango Assado na Mostarda e Mel",
+                "Transforme seu almoço ou jantar com este Frango Assado na Mostarda e Mel!" +
+                        " Uma receita de carnes e aves que une o agridoce da mostarda e do mel em um frango suculento e cheio de sabor." +
+                        " Crocante por fora e macio por dentro, é a pedida certa para impressionar sem complicação.",
+                "Frango: Cortes de frango (coxas, sobrecoxas, asinhas ou um frango inteiro).\n" +
+                        "Molho: Mostarda (Dijon ou amarela), mel, azeite, alho picado, sal, pimenta-do-reino e" +
+                        " temperos a gosto (páprica, alecrim).",
+                "Misture a mostarda, mel, alho, limão, sal e pimenta.\n" +
+                        "Passe essa mistura no frango e deixe marinar por 30 minutos (se puder).\n" +
+                        "Coloque o frango em uma assadeira, regue com um fio de azeite.\n" +
+                        "Asse em forno preaquecido a 200 °C por cerca de 45 minutos, ou até dourar.\n",
+                5f));
+
+        foodList.add(new Food(R.drawable.sopadeoutono,"Sopa de Legumes Fácil",
+                "Aqueça a alma com esta Sopa de Legumes Fácil! Perfeita para os dias mais frios" +
+                        " ou para uma refeição leve e nutritiva." +
+                        " Repleta de vegetais frescos e um caldo saboroso," +
+                        " essa sopa é descomplicada de fazer e um abraço em forma de comida." +
+                        " Uma opção prática e reconfortante para toda a família.",
+                "Ingredientes:\n" +
+                        "\n" +
+                        "Legumes Variados: Cenoura, batata, abobrinha, chuchu, vagem, cebola, alho" +
+                        " (ou seus favoritos).\n" +
+                        "Caldo: Água ou caldo de legumes.\n" +
+                        "Tempero: Sal, pimenta-do-reino, cheiro-verde e temperos a gosto.\n" +
+                        "Azeite: Para refogar.",
+                "Refogue a cebola e o alho no óleo até dourar.\n"+
+                        "Adicione os legumes e o tomate. Refogue por 2 minutos."+
+                        "Acrescente a água, tempere com sal e pimenta.\n"+
+                        "Cozinhe por cerca de 20–25 minutos ou até os legumes ficarem macios.\n"+
+                        "Finalize com cheiro-verde picado.\n",
+                3.5f));
 
         return foodList;
     }

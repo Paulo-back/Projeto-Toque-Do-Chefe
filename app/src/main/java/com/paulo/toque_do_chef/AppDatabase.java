@@ -7,7 +7,7 @@ import androidx.room.Database;
 import androidx.room.Room;
 import androidx.room.RoomDatabase;
 
-@Database(entities = {Cadastro.class}, version = 1)
+@Database(entities = {Cadastro.class}, version = 3)
 public abstract class AppDatabase extends RoomDatabase {
 
     private static AppDatabase sInstance;
@@ -32,9 +32,11 @@ public abstract class AppDatabase extends RoomDatabase {
 
     private static AppDatabase buildDatabase(final Context context) {
         return Room.databaseBuilder(context, AppDatabase.class, DATABASE_NAME)
-                .allowMainThreadQueries() // para testes. Em produção, use threads/coroutines.
+                .allowMainThreadQueries()
+//                .fallbackToDestructiveMigration()
                 .build();
     }
+
 
     private void setDatabaseCreated() {
         mIsDatabaseCreated.postValue(true);

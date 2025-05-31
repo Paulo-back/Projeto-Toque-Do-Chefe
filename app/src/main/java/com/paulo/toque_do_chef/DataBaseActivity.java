@@ -3,6 +3,7 @@ package com.paulo.toque_do_chef;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.content.Intent;
 import android.widget.Toast;
@@ -26,6 +27,7 @@ public class DataBaseActivity extends AppCompatActivity {
         editTextTelefone = findViewById(R.id.editTextTelefone);
         editTextSenha = findViewById(R.id.editTextSenha);
         editTextEmail = findViewById(R.id.editTextEmail);
+
 
         findViewById(R.id.btnIrParaLogin).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -53,22 +55,19 @@ public class DataBaseActivity extends AppCompatActivity {
             return;
         }
 
-        dao.inserir(new Cadastro(nome,telefone, senha, email));
-        Toast.makeText(this, "Cadastro realizado com sucesso!", Toast.LENGTH_SHORT).show();
+        Cadastro novoCadastro = new Cadastro();
+        novoCadastro.setNome(nome);
+        novoCadastro.setTelefone(telefone);
+        novoCadastro.setSenha(senha);
+        novoCadastro.setEmail(email);
+        novoCadastro.setAdmin(false); // <- Sempre usuário comum!
 
-        Intent intent = new Intent(this, ListaActivity.class);
-        startActivity(intent);
+        dao.inserir(novoCadastro);
+        Toast.makeText(this, "Cadastro realizado!", Toast.LENGTH_SHORT).show();
 
-//        try {
-//            dao.inserir(new Cadastro(nome, telefone, senha, email));
-//            Toast.makeText(this, "Cadastro realizado com sucesso!", Toast.LENGTH_SHORT).show();
-//        } catch (Exception e) {
-//            Toast.makeText(this, "Erro ao cadastrar: " + e.getMessage(), Toast.LENGTH_LONG).show();
-//            Log.d("Cadastro", "Dados inseridos: " + nome);
-//
-//        }
-
+        finish(); // Fecha a tela ou redireciona conforme desejar
     }
+
 
     public void limpar(View view) {
         editTextNome.setText("");
@@ -120,6 +119,8 @@ public class DataBaseActivity extends AppCompatActivity {
         Intent intent = new Intent(this, ListaActivity.class);
         startActivity(intent);
     }
+
+
 
 
 }

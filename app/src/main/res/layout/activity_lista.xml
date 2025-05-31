@@ -21,12 +21,29 @@
         android:layout_height="0dp"
         android:layout_weight="1" />
 
-    <Button
-        android:id="@+id/btnVoltarCadastro"
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:orientation="horizontal"
         android:layout_gravity="center"
         android:layout_marginTop="16dp"
-        android:text="Novo Cadastro" />
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnVoltarCadastro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Novo Cadastro" />
+
+        <Button
+            android:id="@+id/btnVoltarCadastro2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Logout" />
+
+    </LinearLayout>
+
 
 </LinearLayout>

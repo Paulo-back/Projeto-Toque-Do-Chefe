@@ -14,7 +14,7 @@ public class Cadastro {
 
     private String email;
 
-//    private boolean isAdmin; Por enquanto sem
+    private boolean isAdmin;
 
 
     public Cadastro() {
@@ -26,6 +26,7 @@ public class Cadastro {
         this.senha = senha;
         this.telefone = telefone;
         this.email = email;
+        this.isAdmin = isAdmin;
     }
     public Cadastro( String nome,String telefone,String senha, String email) {
         this.nome = nome;
@@ -86,11 +87,11 @@ public class Cadastro {
         this.email = email;
     }
 
-//    public boolean isAdmin() {
-//        return isAdmin;
-//    }
-//
-//    public void setAdmin(boolean admin) {
-//        isAdmin = admin;
-//    } Por enquanto sem
+    public boolean isAdmin() {
+        return isAdmin;
+    }
+
+    public void setAdmin(boolean admin) {
+        isAdmin = admin;
+    }
 }

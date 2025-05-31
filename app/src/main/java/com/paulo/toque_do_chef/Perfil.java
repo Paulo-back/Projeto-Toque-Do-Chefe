@@ -82,6 +82,8 @@ public class Perfil extends AppCompatActivity {
             cadastroDao.atualizar(cadastroAtualizado);
             runOnUiThread(() -> Toast.makeText(Perfil.this, "Cadastro atualizado!", Toast.LENGTH_SHORT).show());
         }).start();
+        Intent intent = new Intent(Perfil.this, Home.class);
+        startActivity(intent);
     }
 
     private void excluirCadastro() {

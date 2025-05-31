@@ -19,6 +19,25 @@ public class LoginActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+        AppDatabase db1 = AppDatabase.getInstance(this);
+        CadastroDao dao1 = db1.registroDao();
+
+        // Verifica se já existe o admin
+        Cadastro adminExistente = dao1.login("admin@toque.com", "admin123");
+
+        if (adminExistente == null) {
+            Cadastro admin = new Cadastro();
+            admin.setNome("Admin");
+            admin.setEmail("admin@toque.com");
+            admin.setTelefone("11999999999");
+            admin.setSenha("admin123");
+            admin.setAdmin(true);
+
+            dao1.inserir(admin);
+        }//admin
+
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
@@ -59,12 +78,18 @@ public class LoginActivity extends AppCompatActivity {
                 editor.apply();
 
                 Toast.makeText(LoginActivity.this, "Login bem-sucedido!", Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(LoginActivity.this, Home.class);
+                Intent intent;
+                if (usuario.isAdmin()) {
+                    intent = new Intent(LoginActivity.this, ListaActivity.class); // Tela do administrador
+                } else {
+                    intent = new Intent(LoginActivity.this, Home.class); // Tela padrão
+                }
                 startActivity(intent);
                 finish();
             } else {
                 Toast.makeText(LoginActivity.this, "E-mail ou senha incorretos!", Toast.LENGTH_SHORT).show();
             }
+
         });
 
         ImageButton goToCadastrar = findViewById(R.id.imageButton5);
@@ -73,4 +98,6 @@ public class LoginActivity extends AppCompatActivity {
             startActivity(intent);
         });
     }
+
+
 }

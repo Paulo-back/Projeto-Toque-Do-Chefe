@@ -36,20 +36,52 @@ public class Home extends AppCompatActivity {
         ImageButton btnBuscar = findViewById(R.id.btnBuscar);
 
 // Mapeamento de sinônimos
-        Map<String, String> sinônimos = new HashMap<>();
-        sinônimos.put("rice", "arroz");
-        sinônimos.put("arroz", "arroz");
-        sinônimos.put("massa", "macarrão");
-        sinônimos.put("pasta", "macarrão");
+        Map<String, String> sinonimos = new HashMap<>();
+// Arroz
+        sinonimos.put("arroz", "arroz");
+        sinonimos.put("rice", "arroz");
+
+// Macarrão
+        sinonimos.put("macarrão", "macarrão");
+        sinonimos.put("massa", "macarrão");
+        sinonimos.put("pasta", "macarrão");
+
+// Sobremesa
+        sinonimos.put("torta", "doce");
+        sinonimos.put("sobremesa", "sobremesa");
+        sinonimos.put("doce", "sobremesa");
+
+// Suco
+        sinonimos.put("suco", "suco");
+        sinonimos.put("juice", "suco");
+        sinonimos.put("refresco", "suco");
+
+// Frango
+        sinonimos.put("frango", "frango");
+        sinonimos.put("ave", "frango");
+        sinonimos.put("carne de frango", "frango");
+
+// Carne vermelha
+        sinonimos.put("carne", "carne");
+        sinonimos.put("bovina", "carne");
+        sinonimos.put("vaca", "carne");
+
+// Sopa
+        sinonimos.put("sopa", "sopa");
+        sinonimos.put("caldo", "sopa");
+        sinonimos.put("ensopado", "sopa");
+
 // Adicione mais conforme necessário
 
         btnBuscar.setOnClickListener(v -> {
             String searchText = searchBar.getText().toString().trim().toLowerCase();
 
             // Normaliza a busca para sinônimos
-            if (sinônimos.containsKey(searchText)) {
-                searchText = sinônimos.get(searchText);
+            String termoBuscado = searchText.toLowerCase();
+            if (sinonimos.containsKey(termoBuscado)) {
+                termoBuscado = sinonimos.get(termoBuscado);
             }
+
 
             ArrayList<Food> receitas = ListaReceitasActivity.getFoodList();
             boolean encontrou = false;
