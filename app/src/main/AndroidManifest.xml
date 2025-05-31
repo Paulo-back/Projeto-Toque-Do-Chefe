@@ -13,7 +13,7 @@
         android:theme="@style/Theme.TOQUE_DO_CHEF"
         tools:targetApi="31">
         <activity
-            android:name=".Cadastrar"
+            android:name=".ListaReceitasActivity"
             android:exported="false" />
         <activity
             android:name=".Receita"
@@ -22,10 +22,13 @@
             android:name=".LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".pesquisarReceitas"
+            android:name=".Home"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".CategoriasActivity"
+            android:exported="false"></activity>
+        <activity
+            android:name=".DataBaseActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -33,6 +36,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".ListaActivity" />
 
         <meta-data
             android:name="preloaded_fonts"
