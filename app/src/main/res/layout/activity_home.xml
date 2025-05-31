@@ -7,31 +7,6 @@
     android:layout_height="match_parent"
     tools:context=".Home">
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="446dp"
-        android:layout_height="851dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/fundo" />
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="417dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="1dp"
-        android:scaleX="2"
-        android:scaleY="2"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4"
-        app:srcCompat="@drawable/rectangle_9" />
-
     <!--    <ImageButton-->
     <!--        android:id="@+id/favoritosMenu2"-->
     <!--        android:layout_width="66dp"-->
@@ -46,64 +21,59 @@
     <!--        app:srcCompat="@drawable/group_427319123" />-->
 
 
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="417dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="28dp"
+        android:scaleX="2"
+        android:scaleY="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/rectangle_9" />
 
     <ImageButton
         android:id="@+id/homeMenu2"
-        android:layout_width="0dp"
+        android:layout_width="77dp"
         android:layout_height="66dp"
-        android:layout_marginStart="15dp"
-        android:layout_marginEnd="228dp"
+        android:layout_marginBottom="1dp"
         android:background="#00F0F0F0"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/perfilMenu2"
-        app:layout_constraintHorizontal_bias="0.101"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.997"
-        app:srcCompat="@drawable/home_amarelo" />
+        app:srcCompat="@drawable/home_amarelo"
+        tools:layout_editor_absoluteX="15dp" />
 
     <ImageButton
         android:id="@+id/categoriaMenu2"
         android:layout_width="66dp"
         android:layout_height="66dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="3dp"
+        android:layout_marginBottom="4dp"
         android:background="#00F0F0F0"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.997"
-        app:srcCompat="@drawable/group_427319121__1_" />
+        app:srcCompat="@drawable/group_427319121__1_"
+        tools:layout_editor_absoluteX="164dp" />
 
     <ImageButton
         android:id="@+id/perfilMenu2"
-        android:layout_width="0dp"
+        android:layout_width="77dp"
         android:layout_height="66dp"
-        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="2dp"
         android:background="#00FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/homeMenu2"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.996"
-        app:srcCompat="@drawable/group_427319120" />
+        app:srcCompat="@drawable/group_427319120"
+        tools:layout_editor_absoluteX="320dp" />
 
     <TextView
         android:id="@+id/userName5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="172dp"
         android:fontFamily="@font/alfa_slab_one"
         android:text="Usuario"
         android:textColor="#0E3A5C"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.815"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.042" />
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        tools:layout_editor_absoluteY="30dp" />
 
     <EditText
         android:id="@+id/editTextText"
@@ -116,11 +86,10 @@
         android:text="Pesquisar receita"
         android:textAlignment="center"
         android:textColor="@color/material_dynamic_neutral30"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.372" />
+        tools:layout_editor_absoluteY="199dp" />
 
     <TextView
         android:id="@+id/textView"
@@ -130,53 +99,44 @@
         android:text="Olá,"
         android:textColor="#0E3A5C"
         android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.266"
+        app:layout_constraintHorizontal_bias="0.271"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.263" />
+        tools:layout_editor_absoluteY="130dp" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="206dp"
         android:layout_height="0dp"
-        android:layout_marginTop="236dp"
-        android:layout_marginBottom="58dp"
         android:fontFamily="sans-serif-black"
         android:text="Que receita iremos fazer hoje?"
         android:textColor="#0E3A5C"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:layout_editor_absoluteY="148dp" />
 
     <TextView
         android:id="@+id/textView8"
         android:layout_width="163dp"
         android:layout_height="26dp"
-        android:layout_marginBottom="231dp"
         android:fontFamily="sans-serif-black"
         android:text="Últimas Receitas"
         android:textColor="#0E3A5C"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        tools:layout_editor_absoluteX="234dp"
+        tools:layout_editor_absoluteY="266dp" />
 
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="109dp"
         android:layout_height="36dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.052"
+        app:layout_constraintEnd_toStartOf="@+id/userName5"
+        app:layout_constraintHorizontal_bias="0.089"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.023"
-        app:srcCompat="@drawable/logo" />
+        app:srcCompat="@drawable/logo"
+        tools:layout_editor_absoluteY="16dp" />
 
     <ImageButton
         android:id="@+id/imageButton3"
@@ -184,119 +144,87 @@
         android:layout_height="47dp"
         android:background="#00FFFFFF"
         android:scaleType="fitCenter"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.955"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.023"
-        app:srcCompat="@drawable/group__1_" />
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/userName5"
+        app:srcCompat="@drawable/group__1_"
+        tools:layout_editor_absoluteY="16dp" />
 
     <ImageButton
         android:id="@+id/imageFavorite"
-        android:layout_width="0dp"
-        android:layout_height="136dp"
-        android:layout_marginStart="66dp"
-        android:layout_marginTop="356dp"
-        android:layout_marginEnd="10dp"
+        android:layout_width="214dp"
+        android:layout_height="127dp"
         android:background="#00FFFFFF"
         android:scaleType="fitCenter"
-        app:layout_constraintEnd_toStartOf="@+id/textView3"
+        app:layout_constraintEnd_toStartOf="@+id/textView8"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/unsplash_ry5pwzgazj8" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="48dp"
-        android:layout_marginBottom="403dp"
-        android:fontFamily="sans-serif-black"
-        android:text="Favorito da Semana"
-        android:textColor="#0E3A5B"
-        app:layout_constraintBottom_toTopOf="@+id/imageView4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageFavorite"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:srcCompat="@drawable/unsplash_ry5pwzgazj8"
+        tools:layout_editor_absoluteY="266dp" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="149dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="387dp"
-        android:layout_marginBottom="259dp"
+        android:layout_height="42dp"
         android:text="um macarrão extremamente delicioso!!!. Feito na rua de bangcok nas mais higienicas ruas indianas"
         android:textAlignment="viewStart"
         android:textColor="#0E3A5B"
         android:textSize="12sp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView4"
-        app:layout_constraintStart_toEndOf="@+id/imageFavorite"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:layout_editor_absoluteX="236dp"
+        tools:layout_editor_absoluteY="300dp" />
 
     <TextView
         android:id="@+id/textView9"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="562dp"
-        android:layout_marginEnd="5dp"
-        android:layout_marginBottom="18dp"
         android:text="Um arroz simples e delicioso."
         android:textAlignment="viewStart"
         android:textColor="#0E3A5B"
-        android:textSize="12sp"
-        app:layout_constraintBottom_toTopOf="@+id/goToRecipeButton2"
-        app:layout_constraintEnd_toEndOf="@+id/perfilMenu2"
-        app:layout_constraintStart_toEndOf="@+id/imageButton6"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textSize="12sp" />
 
     <ImageButton
         android:id="@+id/goToRecipeButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="241dp"
-        android:layout_marginTop="470dp"
-        android:layout_marginEnd="65dp"
-        android:layout_marginBottom="354dp"
         android:background="#00FFFFFF"
         android:contentDescription="ButtonRecipe"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/btns_desktop_45pixels_height" />
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageFavorite"
+        app:srcCompat="@drawable/btns_desktop_45pixels_height"
+        tools:layout_editor_absoluteY="354dp" />
 
     <ImageButton
         android:id="@+id/goToRecipeButton2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="65dp"
-        android:layout_marginBottom="105dp"
         android:background="#00FFFFFF"
-        app:layout_constraintBottom_toTopOf="@+id/imageView4"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/imageButton6"
-        app:layout_constraintTop_toBottomOf="@+id/textView9"
-        app:srcCompat="@drawable/btns_desktop_45pixels_height" />
+        app:srcCompat="@drawable/btns_desktop_45pixels_height"
+        tools:layout_editor_absoluteY="513dp" />
 
     <ImageButton
         android:id="@+id/imageButton6"
-        android:layout_width="0dp"
-        android:layout_height="113dp"
-        android:layout_marginStart="53dp"
-        android:layout_marginTop="562dp"
-        android:layout_marginEnd="5dp"
-        android:layout_marginBottom="105dp"
+        android:layout_width="186dp"
+        android:layout_height="111dp"
         android:background="#00FFFFFF"
         android:scaleType="fitCenter"
-        app:layout_constraintBottom_toTopOf="@+id/imageView4"
-        app:layout_constraintEnd_toEndOf="@+id/textView8"
         app:layout_constraintEnd_toStartOf="@+id/goToRecipeButton2"
+        app:layout_constraintHorizontal_bias="0.913"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/group_427319138__2_" />
+        app:srcCompat="@drawable/group_427319138__2_"
+        tools:layout_editor_absoluteY="422dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="127dp"
+        android:layout_height="64dp"
+        android:text="Arroz super facil e extremamente delicioso."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageButton6"
+        tools:layout_editor_absoluteY="434dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
