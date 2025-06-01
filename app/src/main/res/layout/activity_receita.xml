@@ -18,10 +18,10 @@
             android:layout_height="851dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.742"
+            app:layout_constraintHorizontal_bias="0.571"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0"
+            app:layout_constraintVertical_bias="0.933"
             app:srcCompat="@drawable/fundo" />
 
         <ImageView
@@ -33,7 +33,7 @@
             app:layout_constraintHorizontal_bias="0.052"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.023"
+            app:layout_constraintVertical_bias="0.024"
             app:srcCompat="@drawable/logo" />
 
         <ImageButton
@@ -47,22 +47,18 @@
             app:layout_constraintHorizontal_bias="0.955"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.023"
+            app:layout_constraintVertical_bias="0.035"
             app:srcCompat="@drawable/group__1_" />
 
         <ImageView
             android:id="@+id/imageView13"
-            android:layout_width="420dp"
-            android:layout_height="65dp"
+            android:layout_width="426dp"
+            android:layout_height="70dp"
             android:scaleX="2"
             android:scaleY="2"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView16"
-            app:layout_constraintVertical_bias="1.0"
-            app:srcCompat="@drawable/rectangle_9" />
+            app:srcCompat="@drawable/rectangle_9"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="796dp" />
 
         <ImageButton
             android:id="@+id/perfilMenu3"
@@ -109,6 +105,7 @@
             app:layout_constraintVertical_bias="1.0"
             app:srcCompat="@drawable/group_427319121__1_" />
 
+
         <TextView
             android:id="@+id/userName2"
             android:layout_width="wrap_content"
@@ -120,39 +117,37 @@
             android:textColor="#0E3A5C"
             app:layout_constraintBottom_toTopOf="@+id/ratingBar"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.816"
+            app:layout_constraintHorizontal_bias="0.793"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.042" />
+            app:layout_constraintVertical_bias="0.0" />
 
         <TextView
             android:id="@+id/textView5"
-            android:layout_width="159dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_width="167dp"
+            android:layout_height="61dp"
+            android:layout_marginTop="20dp"
             android:fontFamily="sans-serif-black"
             android:text="Macarrão Indiano"
             android:textAlignment="center"
             android:textColor="#0E3A5B"
             android:textSize="24sp"
-            app:layout_constraintTop_toBottomOf="@+id/userName2"
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5" />
-
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/userName2" />
 
         <RatingBar
             android:id="@+id/ratingBar"
-            android:layout_width="234dp"
-            android:layout_height="wrap_content"
+            android:layout_width="230dp"
+            android:layout_height="44dp"
             android:layout_marginTop="8dp"
             android:progressTint="#FFB68D"
             android:rating="4"
             android:scaleX="0.3"
             android:scaleY="0.3"
-            app:layout_constraintTop_toBottomOf="@+id/textView5"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
 
         <TextView
@@ -163,34 +158,33 @@
             android:text="um macarrão extremamente delicioso!!!..."
             android:textAlignment="center"
             android:textColor="#0E3A5A"
-            app:layout_constraintTop_toBottomOf="@+id/ratingBar"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+            app:layout_constraintTop_toBottomOf="@+id/ratingBar" />
 
 
         <TextView
             android:id="@+id/textView16"
             android:layout_width="239dp"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="177dp"
+            android:layout_marginBottom="352dp"
             android:text="receita"
             android:textAlignment="center"
             android:textColor="#0E3A5A"
             app:layout_constraintBottom_toTopOf="@+id/imageView13"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView11" />
+            app:layout_constraintStart_toStartOf="parent" />
 
         <LinearLayout
             android:id="@+id/recipeBoxes"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_width="412dp"
+            android:layout_height="88dp"
+            android:layout_marginTop="16dp"
             android:orientation="horizontal"
             android:padding="8dp"
-            android:layout_marginTop="16dp"
-            app:layout_constraintTop_toBottomOf="@+id/textView16"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent">
+            app:layout_constraintTop_toBottomOf="@+id/textView16">
 
             <TextView
                 android:id="@+id/txtIngredientes"
@@ -198,13 +192,13 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@drawable/box_background"
+                android:maxHeight="200dp"
+                android:overScrollMode="ifContentScrolls"
                 android:padding="12dp"
+                android:scrollbars="vertical"
                 android:text="Ingredientes:\n- 200g de macarrão\n- 1 colher de curry\n- Sal a gosto"
                 android:textColor="#0E3A5A"
-                android:textSize="14sp"
-                android:maxHeight="200dp"
-                android:scrollbars="vertical"
-                android:overScrollMode="ifContentScrolls" />
+                android:textSize="14sp" />
 
             <TextView
                 android:id="@+id/txtModoPreparo"
@@ -212,24 +206,24 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@drawable/box_background"
+                android:maxHeight="200dp"
+                android:overScrollMode="ifContentScrolls"
                 android:padding="12dp"
+                android:scrollbars="vertical"
                 android:text="Modo de preparo:\n1. Cozinhe o macarrão\n2. Adicione o curry\n3. Sirva quente"
                 android:textColor="#0E3A5A"
-                android:textSize="14sp"
-                android:maxHeight="200dp"
-                android:scrollbars="vertical"
-                android:overScrollMode="ifContentScrolls" />
+                android:textSize="14sp" />
 
         </LinearLayout>
 
         <ImageView
             android:id="@+id/imageView5"
-            android:layout_width="252dp"
-            android:layout_height="166dp"
+            android:layout_width="209dp"
+            android:layout_height="108dp"
             android:layout_marginTop="8dp"
-            app:layout_constraintTop_toBottomOf="@+id/textView14"
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView14"
             app:srcCompat="@drawable/unsplash_ry5pwzgazj8" />
 
 
@@ -237,11 +231,12 @@
             android:id="@+id/imageView11"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="28dp"
+            android:layout_marginEnd="8dp"
             android:layout_marginBottom="14dp"
             app:layout_constraintBottom_toTopOf="@+id/textView16"
             app:layout_constraintEnd_toEndOf="@+id/imageView5"
             app:layout_constraintTop_toBottomOf="@+id/imageView5"
+            app:layout_constraintVertical_bias="1.0"
             app:srcCompat="@drawable/frame_31" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>

@@ -91,14 +91,14 @@
         android:layout_height="29dp"
         android:layout_marginBottom="29dp"
         android:background="#F8D27F"
+        android:gravity="center"
         android:hint="Pesquisar receita"
         android:inputType="text"
-        android:gravity="center"
         android:textColorHint="@color/material_dynamic_neutral30"
         app:layout_constraintBottom_toTopOf="@+id/imageFavorite"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"/>
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <ImageButton
         android:id="@+id/btnBuscar"
@@ -111,7 +111,6 @@
         app:layout_constraintStart_toEndOf="@+id/editTextText"
         app:layout_constraintTop_toTopOf="@+id/editTextText"
         app:srcCompat="@drawable/lupablack" />
-
 
 
     <TextView
@@ -234,7 +233,7 @@
         android:contentDescription="ButtonRecipe"
         app:layout_constraintBottom_toTopOf="@+id/textView3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.388"
+        app:layout_constraintHorizontal_bias="0.518"
         app:layout_constraintStart_toEndOf="@+id/imageFavorite"
         app:layout_constraintTop_toBottomOf="@+id/textView4"
         app:srcCompat="@drawable/btns_desktop_45pixels_height" />
