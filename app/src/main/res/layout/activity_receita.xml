@@ -145,43 +145,53 @@
                 android:textSize="14sp" />
         </LinearLayout>
 
+
         <!-- Menu inferior -->
         <LinearLayout
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="66dp"
             android:layout_marginTop="16dp"
             android:layout_marginBottom="16dp"
             android:orientation="horizontal"
+            android:background="@drawable/rectangle_9"
             android:gravity="center"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/recipeBoxes">
 
-
+            <ImageButton
+                android:id="@+id/homeMenu"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/homegray" />
 
             <ImageButton
-                android:id="@+id/homeMenu3"
-                android:layout_width="66dp"
-                android:layout_height="66dp"
+                android:id="@+id/categoriaMenu"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
                 android:background="@null"
-                app:srcCompat="@drawable/group_427319122__1_" />
-
-            <ImageButton
-                android:id="@+id/categoriaMenu3"
-                android:layout_width="66dp"
-                android:layout_height="66dp"
-                android:layout_marginHorizontal="32dp"
-                android:background="@null"
+                android:scaleType="centerInside"
                 app:srcCompat="@drawable/group_427319121__1_" />
 
             <ImageButton
-                android:id="@+id/perfilMenu3"
-                android:layout_width="66dp"
-                android:layout_height="66dp"
+                android:id="@+id/perfilMenu"
+                android:layout_width="0dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
                 android:background="@null"
+                android:scaleType="centerInside"
                 app:srcCompat="@drawable/group_427319120" />
         </LinearLayout>
+
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

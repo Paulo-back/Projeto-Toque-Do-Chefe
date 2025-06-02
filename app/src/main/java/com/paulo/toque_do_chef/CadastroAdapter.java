@@ -5,6 +5,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -15,6 +16,8 @@ public class CadastroAdapter extends RecyclerView.Adapter<CadastroAdapter.ViewHo
     public interface OnDeleteClickListener {
         void onDeleteClick(Cadastro cadastro, int position);
     }
+
+
 
     private List<Cadastro> lista;
     private OnDeleteClickListener deleteClickListener;
@@ -54,9 +57,13 @@ public class CadastroAdapter extends RecyclerView.Adapter<CadastroAdapter.ViewHo
         holder.btnDeletar.setOnClickListener(v -> {
             if (deleteClickListener != null) {
                 deleteClickListener.onDeleteClick(c, holder.getAdapterPosition());
+
+                // Exibe o Toast usando o contexto do botão clicado
+                Toast.makeText(v.getContext(), "Conta excluída com sucesso!", Toast.LENGTH_SHORT).show();
             }
         });
     }
+
 
     @Override
     public int getItemCount() {

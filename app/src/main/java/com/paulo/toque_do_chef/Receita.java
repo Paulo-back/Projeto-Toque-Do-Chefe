@@ -79,17 +79,17 @@ public class Receita extends AppCompatActivity {
         }
 
         // Navegação
-        ImageButton goToPerfil3 = findViewById(R.id.perfilMenu3);
+        ImageButton goToPerfil3 = findViewById(R.id.perfilMenu);
         goToPerfil3.setOnClickListener(v -> {
             Intent perfilIntent = new Intent(Receita.this, Perfil.class);
             perfilIntent.putExtra("cadastroId", cadastroId);
             startActivity(perfilIntent);
         });
 
-        ImageButton goTohomeMenu2 = findViewById(R.id.homeMenu3);
+        ImageButton goTohomeMenu2 = findViewById(R.id.homeMenu);
         goTohomeMenu2.setOnClickListener(v -> startActivity(new Intent(Receita.this, Home.class)));
 
-        ImageButton goTocategoriaMenu2 = findViewById(R.id.categoriaMenu3);
+        ImageButton goTocategoriaMenu2 = findViewById(R.id.categoriaMenu);
         goTocategoriaMenu2.setOnClickListener(v -> startActivity(new Intent(Receita.this, ListaReceitasActivity.class)));
     }
 }
