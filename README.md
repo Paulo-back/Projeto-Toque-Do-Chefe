@@ -49,6 +49,6 @@ A apresentação será realizada na data da N2(02/06/2025), demonstrando o app e
 
 
 ## 📽️ Video do app funcionando
-- [youtube]()
+- [youtube](https://www.youtube.com/watch?v=8LiAkZ7qYlE)
 
 <img src="login_toque_do_chef.png">
