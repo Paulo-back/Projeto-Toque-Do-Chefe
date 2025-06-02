@@ -7,18 +7,18 @@
     android:layout_height="match_parent"
     tools:context=".Home">
 
-    <!--    <ImageButton-->
-    <!--        android:id="@+id/favoritosMenu2"-->
-    <!--        android:layout_width="66dp"-->
-    <!--        android:layout_height="66dp"-->
-    <!--        android:background="#00FFFFFF"-->
-    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
-    <!--        app:layout_constraintEnd_toEndOf="parent"-->
-    <!--        app:layout_constraintHorizontal_bias="0.689"-->
-    <!--        app:layout_constraintStart_toStartOf="parent"-->
-    <!--        app:layout_constraintTop_toTopOf="parent"-->
-    <!--        app:layout_constraintVertical_bias="0.996"-->
-    <!--        app:srcCompat="@drawable/group_427319123" />-->
+<!--        <ImageButton-->
+<!--            android:id="@+id/favoritosMenu2"-->
+<!--            android:layout_width="66dp"-->
+<!--            android:layout_height="66dp"-->
+<!--            android:background="#00FFFFFF"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.689"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintVertical_bias="0.996"-->
+<!--            app:srcCompat="@drawable/group_427319123" />-->
 
 
     <ImageView
@@ -51,7 +51,7 @@
         android:id="@+id/categoriaMenu2"
         android:layout_width="77dp"
         android:layout_height="67dp"
-        android:layout_marginEnd="90dp"
+        android:layout_marginEnd="40dp"
         android:layout_marginBottom="4dp"
         android:background="#00F0F0F0"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -171,8 +171,8 @@
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="126dp"
-        android:layout_height="30dp"
-        android:layout_marginTop="16dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="80dp"
         android:layout_marginBottom="78dp"
         app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toStartOf="@+id/userName5"
@@ -185,7 +185,7 @@
         android:id="@+id/btnLogOut"
         android:layout_width="55dp"
         android:layout_height="45dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="80dp"
         android:layout_marginBottom="203dp"
         android:background="#00FFFFFF"
         android:scaleType="fitCenter"

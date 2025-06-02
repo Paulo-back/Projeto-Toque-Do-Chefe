@@ -64,8 +64,8 @@ public class DataBaseActivity extends AppCompatActivity {
 
         dao.inserir(novoCadastro);
         Toast.makeText(this, "Cadastro realizado!", Toast.LENGTH_SHORT).show();
-
-        finish(); // Fecha a tela ou redireciona conforme desejar
+        Intent intent = new Intent(DataBaseActivity.this, LoginActivity.class);
+        startActivity(intent);
     }
 
 

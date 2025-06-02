@@ -34,6 +34,8 @@ public class Home extends AppCompatActivity {
 
         EditText searchBar = findViewById(R.id.editTextText);
         ImageButton btnBuscar = findViewById(R.id.btnBuscar);
+        ClimaUtil.buscarEExibirClima(this);
+
 
 // Mapeamento de sinônimos
         Map<String, String> sinonimos = new HashMap<>();

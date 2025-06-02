@@ -5,6 +5,7 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -31,8 +32,11 @@ public class Perfil extends AppCompatActivity {
 
         btnAtualizar = findViewById(R.id.buttonEditar);
         btnExcluir = findViewById(R.id.buttonExcluir);
-        ImageButton btnLogOut = findViewById(R.id.btnLogOut);
+        TextView btnLogOut = findViewById(R.id.userName5);
         btnLogOut.setOnClickListener(v -> deslogar());
+
+
+
 
         // Pega o id via Intent
         cadastroId = getIntent().getIntExtra("cadastroId", -1);
