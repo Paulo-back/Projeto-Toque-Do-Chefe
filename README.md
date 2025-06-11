@@ -24,15 +24,15 @@ Demonstrar as habilidades adquiridas ao longo do curso, como:
 
 ## Integrantes do Grupo 👨🏿‍💼 👨🏿‍💼 👩🏻‍💼 👨🏻‍💼
 
- *Paulo Henrique Rosa* 
- - [@Paulo-back](https://github.com/Paulo-back)
- *Edimário Silva de Paula* 
- - [@DePaulaEd](https://github.com/DePaulaEd)
- *Stefanne Pardim de Arruda Souza* 
- - [@pardimsp](https://github.com/pardimsp)
- *Pablo Borges Rodrigues*
- - [@PabloBorgesRodrigues](https://github.com/PabloBorgesRodrigues)
  
+ - [@Paulo-back](https://github.com/Paulo-back)
+ *Paulo Henrique Rosa* 
+ - [@DePaulaEd](https://github.com/DePaulaEd)
+ *Edimário Silva de Paula*  
+ - [@pardimsp](https://github.com/pardimsp)
+ *Stefanne Pardim de Arruda Souza*
+ - [@PabloBorgesRodrigues](https://github.com/PabloBorgesRodrigues)
+ *Pablo Borges Rodrigues*
  
 
 ## ✅ Requisitos Atendidos
